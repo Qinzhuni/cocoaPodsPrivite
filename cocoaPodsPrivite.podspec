@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'cocoaPodsPrivite'
-s.version          = '0.1.0'
+s.version          = '0.1.3'
 s.summary          = 'privite cocoaPod test project.'
 s.homepage         = 'https://github.com/Qinzhuni/cocoaPodsPrivite'
 s.license          = 'Code is MIT, then custom font licenses.'
