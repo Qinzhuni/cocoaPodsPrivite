@@ -166,17 +166,6 @@
     
 }
 
-//- (NSString *)URLEncodedString
-//{
-//    return [self URLEncodedStringWithCFStringEncoding:kCFStringEncodingUTF8];
-//}
-//
-//- (NSString *)URLEncodedStringWithCFStringEncoding:(CFStringEncoding)encoding
-//{
-//    return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)[self mutableCopy], NULL, CFSTR("￼!*'();:@&=+$,/?%#[]"), encoding));
-//}
-
-
 #pragma mark - ***************  coreText ******************************
 /**
  *  字间距 设置
@@ -199,38 +188,6 @@
                                 };
     return [[NSAttributedString alloc] initWithString:string attributes:textInfo];
 }
-
-/**
- *  行间距 设置
- *
- *  string:         正常字符串
- *  lineSpacing:    行距，取值为 float，可正可负，正值增加行距，负值减小行距
- *  textColor:      文本颜色
- *  font:           字体大小
- *
- *  return: NSAttributedString
- */
-//+ (NSMutableAttributedString *)coreTextWithString:(NSString *)string
-//                               lineSpacing:(CGFloat)lineSpacing
-//                                 textColor:(UIColor *)color
-//                                      fontSize:(CGFloat)fontSize {
-//    
-//    NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc] init];
-//    paraStyle.lineSpacing = lineSpacing;
-//    paraStyle.lineBreakMode = NSLineBreakByTruncatingTail;
-//    
-//    NSDictionary *textInfo = @{ NSParagraphStyleAttributeName:paraStyle,
-//                                  NSFontAttributeName:kFont(fontSize),
-//                                NSForegroundColorAttributeName: color
-//                                };
-//    
-//    NSMutableAttributedString  *temp = [LMBEmotionTool emotionStringBy:string fontSize:fontSize];
-//    NSRange range;
-//    range.location = 0;
-//    range.length = temp.length;
-//    [temp addAttributes:textInfo range:range];
-//    return temp;
-//}
 
 /**
  *  段间距 设置
