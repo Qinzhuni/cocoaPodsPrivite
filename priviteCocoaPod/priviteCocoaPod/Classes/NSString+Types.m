@@ -166,15 +166,15 @@
     
 }
 
-- (NSString *)URLEncodedString
-{
-    return [self URLEncodedStringWithCFStringEncoding:kCFStringEncodingUTF8];
-}
-
-- (NSString *)URLEncodedStringWithCFStringEncoding:(CFStringEncoding)encoding
-{
-    return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)[self mutableCopy], NULL, CFSTR("￼!*'();:@&=+$,/?%#[]"), encoding));
-}
+//- (NSString *)URLEncodedString
+//{
+//    return [self URLEncodedStringWithCFStringEncoding:kCFStringEncodingUTF8];
+//}
+//
+//- (NSString *)URLEncodedStringWithCFStringEncoding:(CFStringEncoding)encoding
+//{
+//    return (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)[self mutableCopy], NULL, CFSTR("￼!*'();:@&=+$,/?%#[]"), encoding));
+//}
 
 
 #pragma mark - ***************  coreText ******************************
@@ -210,27 +210,27 @@
  *
  *  return: NSAttributedString
  */
-+ (NSMutableAttributedString *)coreTextWithString:(NSString *)string
-                               lineSpacing:(CGFloat)lineSpacing
-                                 textColor:(UIColor *)color
-                                      fontSize:(CGFloat)fontSize {
-    
-    NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc] init];
-    paraStyle.lineSpacing = lineSpacing;
-    paraStyle.lineBreakMode = NSLineBreakByTruncatingTail;
-    
-    NSDictionary *textInfo = @{ NSParagraphStyleAttributeName:paraStyle,
-                                  NSFontAttributeName:kFont(fontSize),
-                                NSForegroundColorAttributeName: color
-                                };
-    
-    NSMutableAttributedString  *temp = [LMBEmotionTool emotionStringBy:string fontSize:fontSize];
-    NSRange range;
-    range.location = 0;
-    range.length = temp.length;
-    [temp addAttributes:textInfo range:range];
-    return temp;
-}
+//+ (NSMutableAttributedString *)coreTextWithString:(NSString *)string
+//                               lineSpacing:(CGFloat)lineSpacing
+//                                 textColor:(UIColor *)color
+//                                      fontSize:(CGFloat)fontSize {
+//    
+//    NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc] init];
+//    paraStyle.lineSpacing = lineSpacing;
+//    paraStyle.lineBreakMode = NSLineBreakByTruncatingTail;
+//    
+//    NSDictionary *textInfo = @{ NSParagraphStyleAttributeName:paraStyle,
+//                                  NSFontAttributeName:kFont(fontSize),
+//                                NSForegroundColorAttributeName: color
+//                                };
+//    
+//    NSMutableAttributedString  *temp = [LMBEmotionTool emotionStringBy:string fontSize:fontSize];
+//    NSRange range;
+//    range.location = 0;
+//    range.length = temp.length;
+//    [temp addAttributes:textInfo range:range];
+//    return temp;
+//}
 
 /**
  *  段间距 设置

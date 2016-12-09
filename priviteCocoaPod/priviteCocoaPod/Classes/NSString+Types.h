@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (NSString_Extended)
 
@@ -17,7 +18,7 @@
 - (NSString *)rmb;
 - (NSString *)dollor;
 - (NSString *)isEmpty:(NSString*)string;
-- (NSString *)URLEncodedString;
+//- (NSString *)URLEncodedString;
 + (BOOL) isBlankString:(NSString *)string;
 
 + (NSString *)stringValue:(NSString *)str;
@@ -61,10 +62,10 @@
  *
  *  return: NSMutableAttributedString
  */
-+ (NSMutableAttributedString *)coreTextWithString:(NSString *)string
-                               lineSpacing:(CGFloat)lineSpacing
-                                 textColor:(UIColor *)color
-                                  fontSize:(CGFloat)fontSize;
+//+ (NSMutableAttributedString *)coreTextWithString:(NSString *)string
+//                               lineSpacing:(CGFloat)lineSpacing
+//                                 textColor:(UIColor *)color
+//                                  fontSize:(CGFloat)fontSize;
 /**
  *  段间距 设置
  *
