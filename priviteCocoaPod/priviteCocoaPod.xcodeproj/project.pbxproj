@@ -13,7 +13,7 @@
 		8A8D3CDF1DE68D2D00D7CCE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A8D3CDD1DE68D2D00D7CCE6 /* Main.storyboard */; };
 		8A8D3CE11DE68D2D00D7CCE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8D3CE01DE68D2D00D7CCE6 /* Assets.xcassets */; };
 		8A8D3CE41DE68D2D00D7CCE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A8D3CE21DE68D2D00D7CCE6 /* LaunchScreen.storyboard */; };
-		8AA8DB9A1DFAB99B00F67DE0 /* NSString+Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8DB991DFAB99B00F67DE0 /* NSString+Types.m */; };
+		8AA8DBA01DFAC4B200F67DE0 /* NSString+Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA8DB9F1DFAC4B200F67DE0 /* NSString+Types.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		8A8D3CE01DE68D2D00D7CCE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A8D3CE31DE68D2D00D7CCE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A8D3CE51DE68D2D00D7CCE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AA8DB981DFAB99B00F67DE0 /* NSString+Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Types.h"; sourceTree = "<group>"; };
-		8AA8DB991DFAB99B00F67DE0 /* NSString+Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Types.m"; sourceTree = "<group>"; };
+		8AA8DB9E1DFAC4B200F67DE0 /* NSString+Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Types.h"; path = "../../../Category/NSString+Types.h"; sourceTree = "<group>"; };
+		8AA8DB9F1DFAC4B200F67DE0 /* NSString+Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Types.m"; path = "../../../Category/NSString+Types.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +86,8 @@
 		8A8D3CEB1DE6DDD200D7CCE6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8AA8DB981DFAB99B00F67DE0 /* NSString+Types.h */,
-				8AA8DB991DFAB99B00F67DE0 /* NSString+Types.m */,
+				8AA8DB9E1DFAC4B200F67DE0 /* NSString+Types.h */,
+				8AA8DB9F1DFAC4B200F67DE0 /* NSString+Types.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 				8A8D3CDC1DE68D2D00D7CCE6 /* ViewController.m in Sources */,
 				8A8D3CD91DE68D2D00D7CCE6 /* AppDelegate.m in Sources */,
 				8A8D3CD61DE68D2D00D7CCE6 /* main.m in Sources */,
-				8AA8DB9A1DFAB99B00F67DE0 /* NSString+Types.m in Sources */,
+				8AA8DBA01DFAC4B200F67DE0 /* NSString+Types.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

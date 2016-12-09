@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (NSString_Extended)
 
@@ -17,7 +18,6 @@
 - (NSString *)rmb;
 - (NSString *)dollor;
 - (NSString *)isEmpty:(NSString*)string;
-- (NSString *)URLEncodedString;
 + (BOOL) isBlankString:(NSString *)string;
 
 + (NSString *)stringValue:(NSString *)str;
@@ -51,20 +51,7 @@
                                      kern:(NSNumber *) kern
                                 textColor:(UIColor *)color
                                      Font:(UIFont *) font;
-/**
- *  行间距 设置
- *
- *  string:         正常字符串
- *  lineSpacing:    行距，取值为 float，可正可负，正值增加行距，负值减小行距
- *  textColor:      文本颜色
- *  font:           字体大小
- *
- *  return: NSMutableAttributedString
- */
-+ (NSMutableAttributedString *)coreTextWithString:(NSString *)string
-                               lineSpacing:(CGFloat)lineSpacing
-                                 textColor:(UIColor *)color
-                                  fontSize:(CGFloat)fontSize;
+
 /**
  *  段间距 设置
  *
